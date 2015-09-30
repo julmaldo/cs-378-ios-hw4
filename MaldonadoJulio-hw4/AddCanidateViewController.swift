@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddCanidateViewControllerDelegate{
+    func myVCDidFinish(controller:AddCanidateViewController,Can: Canidate)
+}
+
 class AddCanidateViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
@@ -46,6 +50,7 @@ class AddCanidateViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var SaveConfirmation: UILabel!
     var PolitcalPartyChoice: String = "Democrat"
     @IBOutlet weak var SegControl: UISegmentedControl!
+    var delegate:AddCanidateViewControllerDelegate? = nil
     
     //segmented control handler
     @IBAction func SegControlHandler(sender: AnyObject) {
@@ -64,17 +69,16 @@ class AddCanidateViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         if textFeildFilled(FirstNameTextField.text!, last: LastNameTextField.text!, state: StateTextField.text!) {
             SaveConfirmation.text = "Canidate Saved!"
-            createCanidate(FirstNameTextField.text!, last: LastNameTextField.text!, state: StateTextField.text!, politicalParty: PolitcalPartyChoice)
+            let newCan:Canidate = Canidate(first: FirstNameTextField.text!, last: LastNameTextField.text!, state: StateTextField.text!, politicalParty: PolitcalPartyChoice)
+            if (delegate != nil) {
+                delegate!.myVCDidFinish(self, Can: newCan)
+            }
+            
         } else{
             SaveConfirmation.text = "You must enter a value for First and Last name and State!!"
         }
     }
     
-    func createCanidate(first:String, last:String, state:String, politicalParty:String){
-        var createdCanidate:Canidate = Canidate.createCanidate(first, last: last, state: state, politicalPary: politicalParty)
-        //send to canidates
-        
-    }
     
     //check if string contains a value and returns true if there is and false if not
     func textFeildFilled(first:String,last:String, state:String) -> Bool {

@@ -9,38 +9,13 @@
 class Canidate {
     
     //variables
-    private var FirstName:String
-    private var LastName:String
-    private var State:String
-    private var PoliticalParty: String
+    var FirstName:String
+    var LastName:String
+    var State:String
+    var PoliticalParty: String
+    
 
-    //getters
-    func getFirstName() -> String{
-        return self.FirstName
-    }
-    func getLastName() -> String{
-        return self.LastName
-    }
-    func getState() -> String{
-        return self.State
-    }
-    func getPoliticalParty() -> String{
-        return self.PoliticalParty
-    }
-    //setters
-    func setFirstName (value:String){
-        FirstName = value
-    }
-    func setLastName (value:String){
-        LastName = value
-    }
-    func setState (value:String){
-        State = value
-    }
-    func setPoliticalParty (value:String){
-        PoliticalParty = value
-    }
-
+    
     //Init function
     init (first:String, last:String, state:String, politicalParty:String)
     {
@@ -56,10 +31,5 @@ class Canidate {
         let tmpCanidate = Canidate(first: first, last: last, state: state, politicalParty: politicalPary)
         return tmpCanidate
     }
-    //returns decription of automobile function
-    func description ()-> String
-    {
-        let description = "\(self.FirstName) \(self.LastName) \(self.State) \(self.PoliticalParty)"
-        return description
-    }
+   
 }

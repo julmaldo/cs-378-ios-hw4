@@ -10,7 +10,7 @@
 		43633C0E1BBB7F6000CBB210 /* ShowCanidatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43633C0D1BBB7F6000CBB210 /* ShowCanidatesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		43633C101BBB841600CBB210 /* AddCanidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43633C0F1BBB841600CBB210 /* AddCanidateViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		43633C121BBB848A00CBB210 /* Canidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43633C111BBB848A00CBB210 /* Canidate.swift */; settings = {ASSET_TAGS = (); }; };
-		43633C141BBB849700CBB210 /* Canidates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43633C131BBB849700CBB210 /* Canidates.swift */; settings = {ASSET_TAGS = (); }; };
+		43633C161BBBC13C00CBB210 /* CanidateDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43633C151BBBC13C00CBB210 /* CanidateDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		43CA2EDA1BBB21ED0056C7E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA2ED91BBB21ED0056C7E6 /* AppDelegate.swift */; };
 		43CA2EDC1BBB21ED0056C7E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA2EDB1BBB21ED0056C7E6 /* ViewController.swift */; };
 		43CA2EDF1BBB21ED0056C7E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CA2EDD1BBB21ED0056C7E6 /* Main.storyboard */; };
@@ -41,7 +41,7 @@
 		43633C0D1BBB7F6000CBB210 /* ShowCanidatesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCanidatesTableViewController.swift; sourceTree = "<group>"; };
 		43633C0F1BBB841600CBB210 /* AddCanidateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCanidateViewController.swift; sourceTree = "<group>"; };
 		43633C111BBB848A00CBB210 /* Canidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canidate.swift; sourceTree = "<group>"; };
-		43633C131BBB849700CBB210 /* Canidates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canidates.swift; sourceTree = "<group>"; };
+		43633C151BBBC13C00CBB210 /* CanidateDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanidateDetailsViewController.swift; sourceTree = "<group>"; };
 		43CA2ED61BBB21ED0056C7E6 /* MaldonadoJulio-hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MaldonadoJulio-hw4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CA2ED91BBB21ED0056C7E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CA2EDB1BBB21ED0056C7E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,15 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				43CA2ED91BBB21ED0056C7E6 /* AppDelegate.swift */,
-				43CA2EDB1BBB21ED0056C7E6 /* ViewController.swift */,
 				43CA2EDD1BBB21ED0056C7E6 /* Main.storyboard */,
 				43CA2EE21BBB21ED0056C7E6 /* LaunchScreen.storyboard */,
 				43CA2EE01BBB21ED0056C7E6 /* Assets.xcassets */,
 				43CA2EE51BBB21ED0056C7E6 /* Info.plist */,
-				43633C0D1BBB7F6000CBB210 /* ShowCanidatesTableViewController.swift */,
+				43CA2EDB1BBB21ED0056C7E6 /* ViewController.swift */,
 				43633C0F1BBB841600CBB210 /* AddCanidateViewController.swift */,
+				43633C0D1BBB7F6000CBB210 /* ShowCanidatesTableViewController.swift */,
 				43633C111BBB848A00CBB210 /* Canidate.swift */,
-				43633C131BBB849700CBB210 /* Canidates.swift */,
+				43633C151BBBC13C00CBB210 /* CanidateDetailsViewController.swift */,
 			);
 			path = "MaldonadoJulio-hw4";
 			sourceTree = "<group>";
@@ -272,9 +272,9 @@
 			files = (
 				43CA2EDC1BBB21ED0056C7E6 /* ViewController.swift in Sources */,
 				43633C121BBB848A00CBB210 /* Canidate.swift in Sources */,
+				43633C161BBBC13C00CBB210 /* CanidateDetailsViewController.swift in Sources */,
 				43633C0E1BBB7F6000CBB210 /* ShowCanidatesTableViewController.swift in Sources */,
 				43CA2EDA1BBB21ED0056C7E6 /* AppDelegate.swift in Sources */,
-				43633C141BBB849700CBB210 /* Canidates.swift in Sources */,
 				43633C101BBB841600CBB210 /* AddCanidateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
