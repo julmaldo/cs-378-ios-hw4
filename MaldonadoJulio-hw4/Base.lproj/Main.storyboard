@@ -60,20 +60,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtu-Mf-ewz">
-                                <rect key="frame" x="42" y="161" width="87" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c66-NK-gNG">
-                                <rect key="frame" x="84" y="199" width="45" height="21"/>
+                                <rect key="frame" x="84" y="194" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Political Party:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UE-De-862">
-                                <rect key="frame" x="20" y="240" width="109" height="21"/>
+                                <rect key="frame" x="20" y="230" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,12 +78,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-jJ-biC">
-                                <rect key="frame" x="139" y="152" width="174" height="30"/>
+                                <rect key="frame" x="139" y="147" width="174" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z61-ib-MTH">
-                                <rect key="frame" x="139" y="190" width="100" height="30"/>
+                                <rect key="frame" x="139" y="185" width="100" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -100,11 +94,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oJQ-BE-xT2">
-                                <rect key="frame" x="137" y="233" width="163" height="29"/>
+                                <rect key="frame" x="137" y="223" width="163" height="29"/>
                                 <segments>
                                     <segment title="Democrat"/>
                                     <segment title="Republican"/>
                                 </segments>
+                                <connections>
+                                    <action selector="PoliticalPartySegCon:" destination="KB6-3T-08I" eventType="valueChanged" id="OYO-z1-BqH"/>
+                                    <action selector="SegControlHandler:" destination="KB6-3T-08I" eventType="valueChanged" id="DMZ-Mw-N3C"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONi-7X-DOT">
                                 <rect key="frame" x="170" y="300" width="34" height="30"/>
@@ -119,6 +117,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtu-Mf-ewz">
+                                <rect key="frame" x="42" y="156" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -129,7 +133,9 @@
                         <outlet property="PolitcalPartyChoice" destination="oJQ-BE-xT2" id="rWD-Ss-BcA"/>
                         <outlet property="SaveButton" destination="ONi-7X-DOT" id="5qF-I8-f4F"/>
                         <outlet property="SaveConfirmation" destination="xhy-pE-kbe" id="Lr4-lr-hoQ"/>
+                        <outlet property="SegControl" destination="oJQ-BE-xT2" id="Btt-aX-RNp"/>
                         <outlet property="StateTextField" destination="z61-ib-MTH" id="ZGV-l6-pCU"/>
+                        <outlet property="seg" destination="oJQ-BE-xT2" id="UJh-lk-Nhe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8q-Ss-dSz" userLabel="First Responder" sceneMemberID="firstResponder"/>

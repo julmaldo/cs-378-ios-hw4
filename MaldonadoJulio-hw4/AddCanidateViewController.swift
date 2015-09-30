@@ -42,18 +42,38 @@ class AddCanidateViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var FirstNameTextField: UITextField!
     @IBOutlet weak var LastNameTextField: UITextField!
     @IBOutlet weak var StateTextField: UITextField!
-    @IBOutlet weak var PolitcalPartyChoice: UISegmentedControl!
     @IBOutlet weak var SaveButton: UIButton!
     @IBOutlet weak var SaveConfirmation: UILabel!
+    var PolitcalPartyChoice: String = "Democrat"
+    @IBOutlet weak var SegControl: UISegmentedControl!
+    
+    //segmented control handler
+    @IBAction func SegControlHandler(sender: AnyObject) {
+        if(SegControl.selectedSegmentIndex == 0)
+        {
+            PolitcalPartyChoice = "Democrat";
+        }
+        else if(SegControl.selectedSegmentIndex == 1)
+        {
+            PolitcalPartyChoice = "Republican";
+        }
+    }
     
     //button handler checks if fields are filled and then
     @IBAction func SaveButtonClicked(sender: AnyObject) {
         self.view.endEditing(true)
         if textFeildFilled(FirstNameTextField.text!, last: LastNameTextField.text!, state: StateTextField.text!) {
             SaveConfirmation.text = "Canidate Saved!"
+            createCanidate(FirstNameTextField.text!, last: LastNameTextField.text!, state: StateTextField.text!, politicalParty: PolitcalPartyChoice)
         } else{
             SaveConfirmation.text = "You must enter a value for First and Last name and State!!"
         }
+    }
+    
+    func createCanidate(first:String, last:String, state:String, politicalParty:String){
+        var createdCanidate:Canidate = Canidate.createCanidate(first, last: last, state: state, politicalPary: politicalParty)
+        //send to canidates
+        
     }
     
     //check if string contains a value and returns true if there is and false if not
