@@ -17,25 +17,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhg-yY-ydH">
-                                <rect key="frame" x="75" y="177" width="149" height="30"/>
+                                <rect key="frame" x="113" y="178" width="149" height="30"/>
                                 <state key="normal" title="Show Canidates"/>
                                 <connections>
                                     <segue destination="6hO-qu-07G" kind="show" id="UBY-tv-Dfz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5U-EA-3bT">
-                                <rect key="frame" x="75" y="238" width="149" height="30"/>
+                                <rect key="frame" x="113" y="238" width="149" height="30"/>
                                 <state key="normal" title="Vote"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3h-qu-JXa">
-                                <rect key="frame" x="75" y="119" width="149" height="30"/>
+                                <rect key="frame" x="113" y="121" width="149" height="30"/>
                                 <state key="normal" title="Add Canidate"/>
                                 <connections>
                                     <segue destination="KB6-3T-08I" kind="show" id="XFj-j6-6hj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W6-Wx-0Ud">
-                                <rect key="frame" x="75" y="300" width="149" height="30"/>
+                                <rect key="frame" x="113" y="298" width="149" height="30"/>
                                 <state key="normal" title="Show Votes"/>
                             </button>
                         </subviews>
@@ -51,7 +51,7 @@
         <!--Add Canidate View Controller-->
         <scene sceneID="hNC-F9-Bfy">
             <objects>
-                <viewController title="Add Canidate View Controller" id="KB6-3T-08I" sceneMemberID="viewController">
+                <viewController title="Add Canidate View Controller" id="KB6-3T-08I" customClass="AddCanidateViewController" customModule="MaldonadoJulio_hw4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cLw-gg-2T5"/>
                         <viewControllerLayoutGuide type="bottom" id="8G7-hl-htq"/>
@@ -61,57 +61,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtu-Mf-ewz">
-                                <rect key="frame" x="42" y="200" width="87" height="21"/>
+                                <rect key="frame" x="42" y="161" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="State:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c66-NK-gNG">
-                                <rect key="frame" x="84" y="249" width="45" height="21"/>
+                                <rect key="frame" x="84" y="199" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Political Party:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UE-De-862">
-                                <rect key="frame" x="20" y="299" width="109" height="21"/>
+                                <rect key="frame" x="20" y="240" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-pM-QUh">
-                                <rect key="frame" x="139" y="141" width="174" height="30"/>
+                                <rect key="frame" x="139" y="109" width="174" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nSL-jJ-biC">
-                                <rect key="frame" x="139" y="191" width="174" height="30"/>
+                                <rect key="frame" x="139" y="152" width="174" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z61-ib-MTH">
-                                <rect key="frame" x="139" y="240" width="100" height="30"/>
+                                <rect key="frame" x="139" y="190" width="100" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMw-Aq-HhL">
-                                <rect key="frame" x="41" y="150" width="88" height="21"/>
+                                <rect key="frame" x="41" y="118" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oJQ-BE-xT2">
-                                <rect key="frame" x="139" y="292" width="163" height="29"/>
+                                <rect key="frame" x="137" y="233" width="163" height="29"/>
                                 <segments>
                                     <segment title="Democrat"/>
                                     <segment title="Republican"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONi-7X-DOT">
-                                <rect key="frame" x="170" y="382" width="34" height="30"/>
+                                <rect key="frame" x="170" y="300" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="SaveButtonClicked:" destination="KB6-3T-08I" eventType="touchUpInside" id="Kfv-ZB-Mpp"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Canidate Saved!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhy-pE-kbe">
-                                <rect key="frame" x="122" y="454" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhy-pE-kbe">
+                                <rect key="frame" x="32" y="338" width="311" height="102"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -120,6 +123,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="FirstNameTextField" destination="Rrs-pM-QUh" id="AVE-KJ-Doj"/>
+                        <outlet property="LastNameTextField" destination="nSL-jJ-biC" id="Ryh-1Z-Dtx"/>
+                        <outlet property="PolitcalPartyChoice" destination="oJQ-BE-xT2" id="rWD-Ss-BcA"/>
+                        <outlet property="SaveButton" destination="ONi-7X-DOT" id="5qF-I8-f4F"/>
+                        <outlet property="SaveConfirmation" destination="xhy-pE-kbe" id="Lr4-lr-hoQ"/>
+                        <outlet property="StateTextField" destination="z61-ib-MTH" id="ZGV-l6-pCU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8q-Ss-dSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +139,7 @@
         <!--Show Canidate Table View Controller-->
         <scene sceneID="k47-BU-DOQ">
             <objects>
-                <tableViewController title="Show Canidate Table View Controller" id="6hO-qu-07G" sceneMemberID="viewController">
+                <tableViewController title="Show Canidate Table View Controller" id="6hO-qu-07G" customClass="ShowCanidatesTableViewController" customModule="MaldonadoJulio_hw4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EFH-hm-nrD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
